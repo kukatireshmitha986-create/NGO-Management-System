@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beneficiary Management</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+
+<div class="navbar">
+
+    <h2>NGO Management System</h2>
+
+    <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="donations.html">Donations</a></li>
+        <li><a href="volunteers.html">Volunteers</a></li>
+        <li><a href="beneficiaries.html">Beneficiaries</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="reports.html">Reports</a></li>
+    </ul>
+
+</div>
+
+<div class="container">
+
+    <h1>Beneficiary Management</h1>
+
+    <form id="beneficiaryForm">
+
+        <label>Beneficiary Name</label>
+        <input type="text" id="beneficiaryName" placeholder="Enter Beneficiary Name" required>
+
+        <label>Age</label>
+        <input type="number" id="age" placeholder="Enter Age" required>
+
+        <label>Support Type</label>
+        <select id="supportType" required>
+            <option value="">Select Support Type</option>
+            <option>Food</option>
+            <option>Education</option>
+            <option>Medical</option>
+            <option>Financial</option>
+            <option>Clothing</option>
+        </select>
+
+        <button type="submit">Add Beneficiary</button>
+
+    </form>
+
+    <br>
+
+    <input
+        type="text"
+        id="searchBeneficiary"
+        placeholder="Search Beneficiary..."
+        onkeyup="searchBeneficiary()">
+
+    <br><br>
+
+    <h2>Beneficiary List</h2>
+
+    <table id="beneficiaryTable">
+
+        <thead>
+
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Support Type</th>
+                <th>Action</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+        </tbody>
+
+    </table>
+
+    <br>
+
+    <button onclick="window.location.href='dashboard.html'">
+        ← Back to Dashboard
+    </button>
+
+</div>
+
+<script src="js/beneficiaries.js"></script>
+
+</body>
+</html>

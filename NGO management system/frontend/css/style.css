@@ -1,0 +1,707 @@
+/* ===== Global Styles ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f8fa;
+    color: #333;
+}
+
+
+/* ===== Navigation Bar ===== */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0b6e4f;
+    padding: 15px 50px;
+}
+
+.logo {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+
+.nav-links li a:hover,
+.nav-links .active {
+    color: #ffd166;
+}
+
+
+
+/* ===== About Section ===== */
+
+.about {
+    text-align: center;
+    padding: 50px;
+}
+
+
+.about h1 {
+    font-size: 38px;
+    color: #0b6e4f;
+    margin-bottom: 20px;
+}
+
+
+.about p {
+    max-width: 900px;
+    margin: 15px auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+
+/* ===== Mission Vision ===== */
+
+.mission {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+}
+
+
+.box {
+
+    background: white;
+    width: 350px;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+}
+
+
+.box h2 {
+    color: #0b6e4f;
+    margin-bottom: 15px;
+}
+
+
+
+/* ===== Events Section ===== */
+
+
+.events {
+    padding: 50px;
+    text-align: center;
+}
+
+
+.events h2 {
+    font-size: 35px;
+    color: #0b6e4f;
+    margin-bottom: 30px;
+}
+
+
+
+.event-container {
+
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+
+}
+
+
+
+.event-card {
+
+    background: white;
+    width: 280px;
+    padding: 15px;
+    border-radius: 12px;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.1);
+
+}
+
+
+
+.event-card img {
+
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+
+
+.event-card h3 {
+
+    margin: 15px 0;
+    color: #0b6e4f;
+
+}
+
+
+
+.event-card p {
+
+    color: #555;
+    line-height: 1.5;
+
+}
+
+
+
+/* ===== Footer ===== */
+
+
+footer {
+
+    background: #0b6e4f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+
+}
+
+
+
+/* ===== Responsive Design ===== */
+
+
+@media(max-width:768px){
+
+    .navbar {
+
+        flex-direction: column;
+        gap: 15px;
+
+    }
+
+
+    .nav-links {
+
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+
+    .mission {
+
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+}
+/* ===== Home Page ===== */
+
+
+.hero {
+
+    height: 500px;
+    background: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("../assets/ngo-banner.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+
+}
+
+
+
+.hero-content {
+
+    max-width: 800px;
+
+}
+
+
+
+.hero h1 {
+
+    font-size: 45px;
+    margin-bottom: 20px;
+
+}
+
+
+
+.hero p {
+
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+
+}
+
+
+
+.btn {
+
+    display: inline-block;
+    padding: 12px 25px;
+
+    background: #ffd166;
+    color: black;
+
+    text-decoration: none;
+    border-radius: 25px;
+
+    margin: 10px;
+
+    font-weight: bold;
+
+}
+
+
+
+.btn.secondary {
+
+    background: white;
+
+}
+
+
+
+.work {
+
+    padding: 50px;
+    text-align: center;
+
+}
+
+
+
+.work h2 {
+
+    color:#0b6e4f;
+    font-size:35px;
+
+}
+
+
+
+.work-container {
+
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-top:30px;
+    flex-wrap:wrap;
+
+}
+
+
+
+.work-card {
+
+    background:white;
+    width:300px;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+}
+
+
+
+.work-card h3 {
+
+    color:#0b6e4f;
+    margin-bottom:15px;
+
+}
+
+
+
+.stats {
+
+    display:flex;
+    justify-content:center;
+    gap:60px;
+
+    padding:40px;
+
+    background:#0b6e4f;
+
+    color:white;
+
+    text-align:center;
+
+}
+
+
+
+.stats h2 {
+
+    font-size:40px;
+
+}
+/* ===== Donations Page ===== */
+
+
+.donation-section {
+
+    padding:50px;
+    text-align:center;
+
+}
+
+
+
+.donation-section h1 {
+
+    color:#0b6e4f;
+    font-size:38px;
+    margin-bottom:20px;
+
+}
+
+
+
+.donation-section p {
+
+    font-size:18px;
+    margin-bottom:30px;
+
+}
+
+
+
+.donation-box {
+
+    width:400px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.1);
+
+}
+
+
+
+.donation-box form {
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+
+
+.donation-box label {
+
+    text-align:left;
+    margin-top:15px;
+
+    font-weight:bold;
+
+}
+
+
+
+.donation-box input,
+.donation-box select {
+
+    padding:12px;
+
+    margin-top:8px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+}
+
+
+
+.donation-box button {
+
+    margin-top:25px;
+
+    padding:12px;
+
+    background:#0b6e4f;
+
+    color:white;
+
+    border:none;
+
+    border-radius:25px;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+}
+
+
+
+.donation-box button:hover {
+
+    background:#09563d;
+
+}
+/* ===== Dashboard Page ===== */
+
+
+.dashboard {
+
+    padding:50px;
+    text-align:center;
+
+}
+
+
+.dashboard h1 {
+
+    color:#0b6e4f;
+    font-size:38px;
+
+}
+
+
+.dashboard-cards {
+
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+
+    margin-top:40px;
+
+}
+
+
+
+.dashboard-card {
+
+    background:white;
+
+    width:250px;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.1);
+
+}
+
+
+
+.dashboard-card h2 {
+
+    font-size:40px;
+    color:#0b6e4f;
+
+}
+
+
+
+.dashboard-card p {
+
+    font-size:18px;
+
+}
+
+
+
+
+.activities {
+
+    padding:40px;
+    text-align:center;
+
+}
+
+
+
+.activities h2 {
+
+    color:#0b6e4f;
+    font-size:32px;
+
+}
+
+
+
+.activity-list {
+
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+
+    margin-top:30px;
+
+}
+
+
+
+.activity {
+
+    background:white;
+
+    width:300px;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.1);
+
+}
+
+
+
+.activity h3 {
+
+    color:#0b6e4f;
+    margin-bottom:15px;
+
+}
+/* ===== Login Signup ===== */
+
+
+.login-section {
+
+    padding:50px;
+    text-align:center;
+
+}
+
+
+.login-section h1 {
+
+    color:#0b6e4f;
+    font-size:38px;
+
+}
+
+
+
+.login-box {
+
+    width:400px;
+
+    margin:30px auto;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+}
+
+
+
+.login-box form {
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+
+
+.login-box label {
+
+    text-align:left;
+    margin-top:15px;
+    font-weight:bold;
+
+}
+
+
+
+.login-box input {
+
+    padding:12px;
+
+    margin-top:8px;
+
+    border-radius:8px;
+
+    border:1px solid #ccc;
+
+}
+
+
+
+.login-box button {
+
+    margin-top:25px;
+
+    padding:12px;
+
+    background:#0b6e4f;
+
+    color:white;
+
+    border:none;
+
+    border-radius:25px;
+
+    cursor:pointer;
+
+}
+
+
+
+.login-box button:hover {
+
+    background:#09563d;
+
+}
