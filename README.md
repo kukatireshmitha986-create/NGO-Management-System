@@ -46,7 +46,6 @@ NGO-Management-System
 ├── frontend
 ├── backend
 ├── assets
-└── README.md
 ```
 
 ---
